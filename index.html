@@ -1,9 +1,21 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WX Tech | Инженерные решения</title>
+    
+    <title>WX Tech | Чертежи на заказ и КИПиА в Островце</title>
+    
+    <meta name="description" content="WX Tech — профессиональное проектирование, оцифровка чертежей и услуги КИПиА в Островце. Быстро, качественно, по доступным ценам.">
+    
+    <meta name="keywords" content="чертежи на заказ Островец, КИПиА услуги Беларусь, оцифровка чертежей Компас, электротехника помощь, WX Company, инженерные услуги">
+    
+    <meta name="author" content="WX Company">
+
+    <meta property="og:title" content="WX Tech | Инженерные решения">
+    <meta property="og:description" content="Услуги по автоматизации и проектированию. Закажите чертеж или консультацию онлайн.">
+    <meta property="og:type" content="website">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
     
@@ -129,14 +141,15 @@
 
     <nav>
         <a href="#services">Услуги</a>
-        <a href="#price">Цены</a> <a href="#about">О компании</a>
-        <a href="#contacts">Контакты</a>
+        <a href="#portfolio">Работы</a>
+        <a href="#price">Цены</a>
+        <a href="#contact-form">Заказать</a>
     </nav>
 
     <header>
         <h1>WX <span style="color: var(--main-blue);">TECH</span></h1>
-        <p style="font-size: 1.2rem; color: #8b949e;">Промышленная автоматизация и инженерное проектирование</p>
-        <a href="#contacts" class="btn">Начать проект</a>
+        <p style="font-size: 1.2rem; color: #8b949e;">Промышленная автоматизация и инженерное проектирование в Островце</p>
+        <a href="#contact-form" class="btn">Начать проект</a>
     </header>
 
     <div class="container" id="services">
@@ -157,13 +170,6 @@
                 <h3>IT-Интеграция</h3>
                 <p>Разработка технического ПО и веб-интерфейсов для управления проектами.</p>
             </div>
-        </div>
-    </div>
-
-    <div class="container" id="about">
-        <h2 class="section-title">О WX Tech</h2>
-        <div class="about-box">
-            <p><strong>WX Tech</strong> — это подразделение корпорации WX, специализирующееся на точности и инновациях в инженерии. Мы объединяем знания в области электротехники, материаловедения и современных IT-технологий, чтобы решать задачи любой сложности. Наш подход базируется на строгом соблюдении стандартов и стремлении к техническому совершенству.</p>
         </div>
     </div>
 
@@ -194,6 +200,69 @@
         <p style="text-align: center; font-size: 0.9rem; color: #666; margin-top: 15px;">
             * Итоговая стоимость зависит от сложности и сроков выполнения.
         </p>
+    </div>
+
+    <div class="container" id="portfolio">
+        <h2 class="section-title">Выполненные проекты</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <div class="work-img">
+                    <i class="fas fa-file-pdf" style="font-size: 3rem; color: #333;"></i>
+                    </div>
+                <div class="work-info">
+                    <h4>Схема щита КИПиА</h4>
+                    <p>Разработка исполнительной документации для системы управления.</p>
+                </div>
+            </div>
+            
+            <div class="portfolio-item">
+                <div class="work-img">
+                    <i class="fas fa-drafting-compass" style="font-size: 3rem; color: #333;"></i>
+                </div>
+                <div class="work-info">
+                    <h4>Деталировка (А3)</h4>
+                    <p>Оцифровка бумажного чертежа детали в Компас-3D.</p>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <div class="work-img">
+                    <i class="fas fa-microchip" style="font-size: 3rem; color: #333;"></i>
+                </div>
+                <div class="work-info">
+                    <h4>Технический расчет</h4>
+                    <p>Расчет параметров электрической цепи для учебного проекта.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="about">
+        <h2 class="section-title">О WX Tech</h2>
+        <div class="about-box">
+            <p><strong>WX Tech</strong> — это подразделение корпорации WX, специализирующееся на точности и инновациях в инженерии. Мы объединяем знания в области электротехники, материаловедения и современных IT-технологий, чтобы решать задачи любой сложности. Наш подход базируется на строгом соблюдении стандартов и стремлении к техническому совершенству.</p>
+        </div>
+    </div>
+
+    <div class="container" id="contact-form">
+        <h2 class="section-title">Оставить заявку</h2>
+        <div class="form-container">
+            <form action="https://formspree.io/f/xlgalrjq" method="POST">
+                <div class="form-group">
+                    <label>Ваше имя</label>
+                    <input type="text" name="name" placeholder="Иван Иванов" required>
+                </div>
+                <div class="form-group">
+                    <label>Ваш Email / Телефон</label>
+                    <input type="text" name="contact" placeholder="example@mail.com или +375..." required>
+                </div>
+                <div class="form-group">
+                    <label>Описание задачи</label>
+                    <textarea name="message" rows="5" placeholder="Опишите, что нужно сделать (чертеж, схема, расчет...)" required></textarea>
+                </div>
+                <button type="submit" class="btn" style="width: 100%; border: none; cursor: pointer;">Отправить заявку</button>
+            </form>
+        </div>
     </div>
 
     <footer id="contacts">
