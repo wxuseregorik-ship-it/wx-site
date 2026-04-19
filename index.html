@@ -170,11 +170,53 @@
     <footer id="contacts">
         <h2>Связь с нами</h2>
         <p>Есть техническая задача? Мы предложим решение.</p>
-        <p>Email: <a href="mailto:contact@wx-company.com" style="color: var(--main-blue);">напиши_свою_почту@mail.com</a></p>
+        <p>Email: <a href="wx.user.egorik@gmail.com" style="color: var(--main-blue);">wx.user.egorik@gmail.com</a></p>
         <div style="margin-top: 30px;">
             <p>&copy; 2026 WX Company. Built for the Future.</p>
         </div>
     </footer>
 
+    <a href="https://t.me/user_egor" class="tg-button" target="_blank">
+    <i class="fab fa-telegram-plane"></i>
+    <span>Написать в TG</span>
+</a>
+
+<style>
+    .tg-button {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        background: #24A1DE;
+        color: white;
+        padding: 12px 20px;
+        border-radius: 50px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: bold;
+        box-shadow: 0 10px 20px rgba(36, 161, 222, 0.3);
+        z-index: 1000;
+        transition: 0.3s;
+        animation: pulse 2s infinite;
+    }
+
+    .tg-button:hover {
+        transform: scale(1.1);
+        box-shadow: 0 15px 25px rgba(36, 161, 222, 0.5);
+    }
+
+    @keyframes pulse {
+        0% { box-shadow: 0 0 0 0 rgba(36, 161, 222, 0.7); }
+        70% { box-shadow: 0 0 0 15px rgba(36, 161, 222, 0); }
+        100% { box-shadow: 0 0 0 0 rgba(36, 161, 222, 0); }
+    }
+
+    /* Скрываем текст на маленьких экранах, оставляя только иконку */
+    @media (max-width: 600px) {
+        .tg-button span { display: none; }
+        .tg-button { padding: 15px; border-radius: 50%; }
+    }
+</style>
 </body>
 </html>
