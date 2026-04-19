@@ -1,0 +1,27 @@
+.price-table {
+            background: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid #30363d;
+        }
+
+        .price-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 30px;
+            border-bottom: 1px solid #30363d;
+            transition: 0.3s;
+        }
+
+        .price-item:last-child { border-bottom: none; }
+
+        .price-item:hover {
+            background: #1c2128;
+        }
+
+        .price-item .cost {
+            color: var(--main-blue);
+            font-weight: bold;
+        }
+
+        /* Обновим навигацию, чтобы добавить ссылку на прайс */
