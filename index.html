@@ -248,28 +248,42 @@
     <div class="container" id="contact-form">
         <h2 class="section-title">Оставить заявку</h2>
         <div class="form-container">
-            <form action="https://formspree.io/f/xlgalrjq" method="POST">
+            <form action="https://formspree.io/f/твой_id" method="POST">
                 <div class="form-group">
-                    <label>Ваше имя</label>
-                    <input type="text" name="name" placeholder="Иван Иванов" required>
-                </div>
-                <div class="form-group">
-                    <label>Ваш Email / Телефон</label>
-                    <input type="text" name="contact" placeholder="example@mail.com или +375..." required>
-                </div>
-                <div class="form-group">
-                    <label>Описание задачи</label>
-                    <textarea name="message" rows="5" placeholder="Опишите, что нужно сделать (чертеж, схема, расчет...)" required></textarea>
-                </div>
-                <button type="submit" class="btn" style="width: 100%; border: none; cursor: pointer;">Отправить заявку</button>
-            </form>
+                <label>Имя и Фамилия</label>
+                <input type="text" name="name" 
+                    placeholder="Александр Иванов" 
+                    required 
+                    pattern="^[А-Яа-яЁёA-Za-z]+\s[А-Яа-яЁёA-Za-z]+$" 
+                    title="Введите имя и фамилию через пробел">
+         </div>
+
+        <div class="form-group">
+            <label>Контакт для связи (Email или Телефон)</label>
+            <input type="text" name="contact" 
+               placeholder="ivanov@mail.com или +375..." 
+               required 
+               minlength="7"
+               title="Введите корректный email или номер телефона">
+        </div>
+
+        <div class="form-group">
+            <label>Описание задачи</label>
+            <textarea name="message" rows="5" 
+                  placeholder="Опишите ваш проект. Если его нет в прайсе — предложите свою задачу." 
+                  required 
+                  minlength="10"></textarea>
+        </div>
+
+    <button type="submit" class="btn" style="width: 100%; border: none; cursor: pointer;">Отправить заявку в WX Tech</button>
+</form>
         </div>
     </div>
 
     <footer id="contacts">
         <h2>Связь с нами</h2>
         <p>Есть техническая задача? Мы предложим решение.</p>
-        <p>Email: <a href="wx.user.egorik@gmail.com" style="color: var(--main-blue);">wx.user.egorik@gmail.com</a></p>
+        <a href="mailto:wx.user.egorik@gmail.com" style="color: var(--main-blue);">wx.user.egorik@gmail.com</a>
         <div style="margin-top: 30px;">
             <p>&copy; 2026 WX Company. Built for the Future.</p>
         </div>
