@@ -1,4 +1,4 @@
-.price-table {
+        .price-table {
             background: var(--card-bg);
             border-radius: 12px;
             overflow: hidden;
@@ -65,81 +65,47 @@
             margin: 0;
         }
 
-        .form-container {
-            background: var(--card-bg);
-            padding: 40px;
-            border-radius: 12px;
-            border: 1px solid #30363d;
-            max-width: 600px;
-            margin: 0 auto;
-        }
+/* Обновленные стили формы WX Tech */
+.form-container {
+    background: #161b22 !important;
+    padding: 30px !important;
+    border-radius: 12px !important;
+    border: 1px solid #30363d !important;
+    max-width: 500px !important;
+    margin: 40px auto !important;
+    display: block !important;
+}
 
-        .form-group {
-            margin-bottom: 20px;
-            text-align: left;
-        }
+.form-group {
+    margin-bottom: 25px !important;
+    display: block !important;
+    width: 100% !important;
+}
 
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            color: var(--main-blue);
-            font-weight: bold;
-            font-size: 0.9rem;
-        }
+.form-group label {
+    display: block !important;
+    margin-bottom: 10px !important;
+    color: #00a2ff !important;
+    font-size: 0.9rem !important;
+    text-align: left !important;
+}
 
-        .form-group input, .form-group textarea {
-            width: 100%;
-            padding: 12px;
-            background: #0d1117;
-            border: 1px solid #30363d;
-            border-radius: 6px;
-            color: white;
-            box-sizing: border-box; /* Чтобы паддинги не раздували ширину */
-            font-family: inherit;
-        }
+.form-group input, 
+.form-group textarea {
+    display: block !important;
+    width: 100% !important; /* Растягиваем на всю ширину контейнера */
+    padding: 12px 15px !important;
+    background: #0d1117 !important;
+    border: 1px solid #30363d !important;
+    border-radius: 8px !important;
+    color: white !important;
+    font-family: inherit !important;
+    font-size: 1rem !important;
+    box-sizing: border-box !important; /* Учитываем паддинги в ширине */
+}
 
-        .form-group input:focus, .form-group textarea:focus {
-            outline: none;
-            border-color: var(--main-blue);
-        }
-
-        .form-container {
-            background: var(--card-bg);
-            padding: 30px;
-            border-radius: 12px;
-            border: 1px solid #30363d;
-            max-width: 500px; /* Немного сузим для аккуратности */
-            margin: 40px auto;
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            color: var(--main-blue);
-            font-size: 0.85rem;
-            text-align: left;
-        }
-
-        .form-group input, .form-group textarea {
-            width: 100%;
-            padding: 12px 15px;
-            background: #0d1117;
-            border: 1px solid #30363d;
-            border-radius: 8px;
-            color: white;
-            font-family: inherit;
-            font-size: 1rem;
-            box-sizing: border-box; /* Важно, чтобы поля не вылезали за края */
-        }
-
-        .form-group input:focus, .form-group textarea:focus {
-            border-color: var(--main-blue);
-            outline: none;
-            box-shadow: 0 0 8px rgba(0, 162, 255, 0.2);
-        }
-
-        /* Обновим навигацию, чтобы добавить ссылку на прайс */
+.form-group input:focus, 
+.form-group textarea:focus {
+    border-color: #00a2ff !important;
+    outline: none !important;
+}
