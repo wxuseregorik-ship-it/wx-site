@@ -103,4 +103,43 @@
             border-color: var(--main-blue);
         }
 
+        .form-container {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #30363d;
+            max-width: 500px; /* Немного сузим для аккуратности */
+            margin: 40px auto;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--main-blue);
+            font-size: 0.85rem;
+            text-align: left;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 12px 15px;
+            background: #0d1117;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            color: white;
+            font-family: inherit;
+            font-size: 1rem;
+            box-sizing: border-box; /* Важно, чтобы поля не вылезали за края */
+        }
+
+        .form-group input:focus, .form-group textarea:focus {
+            border-color: var(--main-blue);
+            outline: none;
+            box-shadow: 0 0 8px rgba(0, 162, 255, 0.2);
+        }
+
         /* Обновим навигацию, чтобы добавить ссылку на прайс */
