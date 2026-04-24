@@ -244,41 +244,30 @@
             <p><strong>WX Tech</strong> — это подразделение корпорации WX, специализирующееся на точности и инновациях в инженерии. Мы объединяем знания в области электротехники, материаловедения и современных IT-технологий, чтобы решать задачи любой сложности. Наш подход базируется на строгом соблюдении стандартов и стремлении к техническому совершенству.</p>
         </div>
     </div>
-
-    <div class="container" id="contact-form">
-        <h2 class="section-title">Оставить заявку</h2>
-        <div class="form-container">
-            <form action="https://formspree.io/f/твой_id" method="POST">
-                <div class="form-group">
+    
+<div class="container" id="contact-form">
+    <h2 class="section-title">Оставить заявку</h2>
+    
+    <div class="form-container"> <form action="https://formspree.io/f/твой_id" method="POST">
+            <div class="form-group">
                 <label>Имя и Фамилия</label>
-                <input type="text" name="name" 
-                    placeholder="Александр Иванов" 
-                    required 
-                    pattern="^[А-Яа-яЁёA-Za-z]+\s[А-Яа-яЁёA-Za-z]+$" 
-                    title="Введите имя и фамилию через пробел">
-         </div>
+                <input type="text" name="name" placeholder="Александр Иванов" required pattern="^[А-Яа-яЁёA-Za-z]+\s[А-Яа-яЁёA-Za-z]+$">
+            </div>
+            
+            <div class="form-group">
+                <label>Контакт для связи</label>
+                <input type="text" name="contact" placeholder="ivanov@mail.com или +375..." required>
+            </div>
 
-        <div class="form-group">
-            <label>Контакт для связи (Email или Телефон)</label>
-            <input type="text" name="contact" 
-               placeholder="ivanov@mail.com или +375..." 
-               required 
-               minlength="7"
-               title="Введите корректный email или номер телефона">
-        </div>
+            <div class="form-group">
+                <label>Описание задачи</label>
+                <textarea name="message" rows="5" placeholder="Опишите ваш проект..." required></textarea>
+            </div>
 
-        <div class="form-group">
-            <label>Описание задачи</label>
-            <textarea name="message" rows="5" 
-                  placeholder="Опишите ваш проект. Если его нет в прайсе — предложите свою задачу." 
-                  required 
-                  minlength="10"></textarea>
-        </div>
-
-    <button type="submit" class="btn" style="width: 100%; border: none; cursor: pointer;">Отправить заявку в WX Tech</button>
-</form>
-        </div>
+            <button type="submit" class="btn" style="width: 100%; border: none; cursor: pointer;">Отправить заявку в WX Tech</button>
+        </form>
     </div>
+</div>
 
     <footer id="contacts">
         <h2>Связь с нами</h2>
