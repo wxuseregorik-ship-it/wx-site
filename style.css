@@ -1,4 +1,4 @@
-        :root { 
+               :root { 
             --main-blue: #00a2ff; 
             --bg: #0b0e14; 
             --card-bg: #161b22; 
@@ -81,4 +81,28 @@
         footer { padding: 60px 20px; background: #0d1117; border-top: 1px solid #30363d; text-align: center; color: #666; }
         
         /* Кнопка TG */
-        .tg-button { position: fixed; bottom: 20px; right: 20px; background: #24A1DE; color: white; padding: 12px 20px; border-radius: 50px; text-decoration: none; font-weight: bold; display: flex; align-items: center; gap: 10px; z-index: 2000; }
+        .tg-button {position: fixed; bottom: 20px; right: 20px; background: #24A1DE; color: white; padding: 12px 20px; border-radius: 50px; text-decoration: none; font-weight: bold; display: flex; align-items: center; gap: 10px; z-index: 2000; }
+
+        .review-card {
+            font-style: italic;
+            text-align: left !important;
+        }
+
+        .stars {
+            color: #ffcc00; /* Золотой цвет для звезд */
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        .client-name {
+            display: block;
+            margin-top: 15px;
+            color: var(--main-blue);
+            font-weight: bold;
+            font-style: normal;
+        }
+
+        select:focus {
+            border-color: var(--main-blue) !important;
+            outline: none;
+        }
