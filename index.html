@@ -13,9 +13,11 @@
 </head>
 <body>
     <nav>
+        <a href="about.html">О компании</a>
         <a href="#services">Услуги</a>
         <a href="#price">Цены</a>
         <a href="#portfolio">Работы</a>
+        <a href="#reviews">Отзывы</a>
         <a href="#contact-form">Заказать</a>
     </nav>
 
@@ -48,10 +50,29 @@
         <p>Раздел в процессе наполнения реальными кейсами.</p>
     </div>
 
+    <div class="container" id="reviews">
+        <h2 class="section-title">Отзывы клиентов</h2>
+            <div class="card-grid">
+                <div class="card review-card">
+                    <div class="stars">★★★★★</div>
+                        <p>"Заказывал оцифровку чертежа для курсовой. Сделано очень быстро и без ошибок в размерах. Рекомендую!"</p>
+                        <span class="client-name">— Алексей, студент</span>
+    </div>
+        
+        <div class="card review-card">
+            <div class="stars">★★★★★</div>
+            <p>"Помогли со схемой автоматизации для гаража. Всё четко объяснили по материалам. Буду обращаться еще."</p>
+            <span class="client-name">— Дмитрий, Островец</span>
+        </div>
+        </div>
+    </div>
+
+
+
     <div class="container" id="contact-form">
         <h2 class="section-title">Оставить заявку</h2>
         <div class="form-container">
-            <form action="https://formspree.io/f/твой_id" method="POST">
+            <form action="https://formspree.io/f/xlgalrjq" method="POST">
                 <div class="form-group">
                     <label>Имя и Фамилия</label>
                     <input type="text" name="name" placeholder="Александр Иванов" required pattern="^[А-Яа-яЁёA-Za-z]+\s[А-Яа-яЁёA-Za-z]+$">
@@ -69,12 +90,39 @@
         </div>
     </div>
 
+    <div class="container" id="add-review">
+        <h2 class="section-title">Оставить свой отзыв</h2>
+            <div class="form-container">
+                <form action="https://formspree.io/f/xwvazvny" method="POST">
+                <div class="form-group">
+                    <label>Ваше имя</label>
+                    <input type="text" name="client_name" placeholder="Как вас зовут?" required pattern="^[А-Яа-яЁёA-Za-z]+\s[А-Яа-яЁёA-Za-z]+$">
+                </div>
+                <div class="form-group">
+                    <label>Оценка</label>
+                    <select name="rating" style="width: 100%; padding: 12px; background: #0d1117; border: 1px solid #30363d; border-radius: 8px; color: white;">
+                        <option value="5">5 звезд — Отлично</option>
+                        <option value="4">4 звезды — Хорошо</option>
+                        <option value="3">3 звезды — Удовлетворительно</option>
+                        <option value="2">2 звезды — Плохо</option>
+                        <option value="1">1 звезда — Ужасно</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Ваш отзыв</label>
+                    <textarea name="review_text" rows="4" placeholder="Напишите ваши впечатления о работе с WX Tech..." required minlength="10"></textarea>
+                </div>
+                    <button type="submit" class="btn" style="width: 100%;">Опубликовать отзыв</button>
+                </form>
+            </div>
+    </div>
+
     <footer>
         <p>Email: <a href="mailto:wx.user.egorik@gmail.com" style="color: var(--main-blue);">wx.user.egorik@gmail.com</a></p>
         <p>&copy; 2026 WX Company. Все права защищены.</p>
     </footer>
 
-    <a href="https://t.me/твой_ник" class="tg-button" target="_blank">
+    <a href="https://t.me/user_egor" class="tg-button" target="_blank">
         <i class="fab fa-telegram-plane"></i> <span>Написать в TG</span>
     </a>
 </body>
